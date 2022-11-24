@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                sh "chmod u+x Prog.py"
+                sh "chmod u+x multiply.py"
                 sh "./multiply.py"
             }
         }
