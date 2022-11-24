@@ -12,10 +12,16 @@ pipeline {
                 sh "python3 multiply.py"
             }
         }
-     stage('Test Code') {
+    stage('Test Code Success') {
             steps {
                 sh "chmod u+x Test.py"
                 sh "python3 Test.py"
+            }
+        }
+    stage('Test Code Fail') {
+            steps {
+                sh "chmod u+x Test1.py"
+                sh "python3 Test1.py"
             }
         }
     } 
