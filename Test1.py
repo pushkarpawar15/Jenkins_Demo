@@ -10,7 +10,7 @@ class TestSum(unittest.TestCase):
         """
         data = [20, 30]
         result = Mul(data)
-        self.assertEqual(result, 0)
+        self.assertEqual(result, 6)
 
     def test_list_int4(self):
         """
